@@ -1,0 +1,4 @@
+Flask
+Gunicorn
+line-bot-sdk
+pyshorteners
