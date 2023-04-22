@@ -55,7 +55,7 @@ def handle_message(event):
             event.reply_token,
             TextSendMessage(text=url))
     # もしメッセージが短縮されたURLであれば、そのURLを展開する
-    elif event.message.text.startswith("https://t.co/"):
+    elif event.message.text.startswith("https://tinyurl.com/"):
         # URLを展開する
         s = pyshorteners.Shortener()
         url = s.tinyurl.expand(event.message.text)
